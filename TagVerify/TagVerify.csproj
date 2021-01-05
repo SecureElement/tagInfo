@@ -11,14 +11,13 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NTAGLib" />
-  </ItemGroup>
-  <ItemGroup>
     <None Remove="libs\NTAGLib.dll" />
     <None Remove="NTAGLib.dll" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="libs\NTAGLib.dll" />
-    <Content Include="NTAGLib.dll" />
+    <Content Include="NTAGLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>
